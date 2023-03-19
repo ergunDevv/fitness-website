@@ -1,6 +1,11 @@
 import Logo from "@/assets/Logo.png";
+import { SelectedPage } from "@/shared/types";
 
-const Footer = () => {
+type Props = {
+
+  setSelectedPage:(value:SelectedPage)=>void
+}
+const Footer = (setSelectedPage: Props) => {
   return (
     <footer className="bg-primary-100 py-16">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
